@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Gift Cards</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #E91E63;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .category-container {
+            margin-bottom: 40px;
+        }
+
+        .category-container h2 {
+            color: #FF4081;
+            border-bottom: 2px solid #FF4081;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .offers-container {
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+
+        .offer {
+            background-color: white;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 320px;
+            width: 18%;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.2s ease;
+            position: relative;
+        }
+
+        .offer:hover {
+            transform: translateY(-10px);
+        }
+
+        .offer img {
+            width: 160px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .value-proposition {
+            font-size: 1rem; /* Reduced by 40% */
+            color: #000000;
+            margin: 0;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .offer .button {
+            background-color: #FF4081;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+        }
+
+        .offer .button:hover {
+            background-color: #E91E63;
+        }
+
+        /* Slick specific styling */
+        .slick-prev, .slick-next {
+            color: black;
+            font-size: 30px;
+        }
+
+        .slick-prev:hover, .slick-next:hover {
+            color: #E91E63;
+        }
+
+        .slick-dots li button:before {
+            color: #FF4081;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color: #E91E63;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .offer {
+                width: 90%; /* Offers will take up more space on smaller screens */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Valentine's Day Gift Cards</h1>
+
+    <!-- Flowers Category -->
+    <div class="category-container">
+        <h2>Flowers</h2>
+        <div class="offers-container flowers-carousel">
+            <div class="offer" style="background-image: url('https://cdn.bloomnation.com/139209_french/Flower%20Arrangements/139209_bloomnation-s-wonderland-vase%20arrangement.jpg');">
+                <img src="https://logo.clearbit.com/bloomnation.com" alt="BloomNation Logo">
+                <p class="value-proposition">Buy $50 gift card and get 5% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.urbanstems.com/images/products/20220601153204/queen_thequeensofspring_flatlay_hero-0-0-1720-1720-20220601153204.jpg');">
+                <img src="https://logo.clearbit.com/urbanstems.com" alt="UrbanStems Logo">
+                <p class="value-proposition">Buy $50 gift card and get 3% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.proflowers.com/images/products/pf/xxl_fp_12rn_20_p5.jpg');">
+                <img src="https://logo.clearbit.com/proflowers.com" alt="ProFlowers Logo">
+                <p class="value-proposition">Buy $50 gift card and get 6% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.ftd.com/product-images/BB62/BB62_300x400.jpg');">
+                <img src="https://logo.clearbit.com/ftd.com" alt="FTD Logo">
+                <p class="value-proposition">Buy $50 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2016/10/23/18/06/flowers-1761192_960_720.jpg');">
+                <img src="https://logo.clearbit.com/teleflora.com" alt="Teleflora Logo">
+                <p class="value-proposition">Buy $50 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Candies Category -->
+    <div class="category-container">
+        <h2>Candies</h2>
+        <div class="offers-container candies-carousel">
+            <div class="offer" style="background-image: url('https://www.godiva.com/on/demandware.static/-/Sites-godiva-master-catalog/default/dw2bb7c6f1/images/hi-res/15102_900px_01.jpg');">
+                <img src="https://logo.clearbit.com/godiva.com" alt="Godiva Logo">
+                <p class="value-proposition">Buy $50 gift card and get 5% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://www.sees.com/dw/image/v2/BDFJ_PRD/on/demandware.static/-/Sites-sees-master-catalog/default/dwef02b526/zoom/680-goldfavoritiesgiftbox_main.jpg');">
+                <img src="https://logo.clearbit.com/seescandies.com" alt="See's Candies Logo">
+                <p class="value-proposition">Buy $50 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://www.russellstover.com/media/catalog/product/cache/85c197a1c83da3cb109c92b245c2e74e/b/o/bounty-hunt-small_0310.jpg');">
+                <img src="https://logo.clearbit.com/russellstover.com" alt="Russell Stover Logo">
+                <p class="value-proposition">Buy $50 gift card and get 3% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.shopify.com/s/files/1/0031/5995/8292/products/AssortedSquaresLuxeHazelnutPraline1024x1024_1.png');">
+                <img src="https://logo.clearbit.com/ghirardelli.com" alt="Ghirardelli Logo">
+                <p class="value-proposition">Buy $50 gift card and get 6% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2014/08/08/22/31/chocolates-413975_960_720.jpg');">
+                <img src="https://logo.clearbit.com/lindt.com" alt="Lindt Logo">
+                <p class="value-proposition">Buy $50 gift card and get 5% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spa Category -->
+    <div class="category-container">
+        <h2>Spa</h2>
+        <div class="offers-container spa-carousel">
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2016/10/23/18/06/wellness-1761201_1280.jpg');">
+                <img src="https://logo.clearbit.com/spafinder.com" alt="SpaFinder Logo">
+                <p class="value-proposition">Buy $50 gift card and get 3% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://www.massageenvy.com/images/therapist-hero/therapist-hero-1125x742.jpg');">
+                <img src="https://logo.clearbit.com/massageenvy.com" alt="Massage Envy Logo">
+                <p class="value-proposition">Buy $50 gift card and get 5% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.burke-williams.com/img/spa-services/spa-services-main.jpg');">
+                <img src="https://logo.clearbit.com/burke-williams.com" alt="Burke Williams Logo">
+                <p class="value-proposition">Buy $50 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/21/12/21/spa-1845731_1280.jpg');">
+                <img src="https://logo.clearbit.com/handandstone.com" alt="Hand and Stone Logo">
+                <p class="value-proposition">Buy $50 gift card and get 6% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://www.blissworld.com/media/wysiwyg/Bliss_March_2021_Homepage_Mobile.png');">
+                <img src="https://logo.clearbit.com/blissworld.com" alt="Bliss Logo">
+                <p class="value-proposition">Buy $50 gift card and get 6% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hotels Category -->
+    <div class="category-container">
+        <h2>Hotels</h2>
+        <div class="offers-container hotels-carousel">
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2016/04/15/22/10/hotel-1330850_1280.jpg');">
+                <img src="https://logo.clearbit.com/marriott.com" alt="Marriott Logo">
+                <p class="value-proposition">Buy $100 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2017/05/31/21/14/city-2361072_1280.jpg');">
+                <img src="https://logo.clearbit.com/hilton.com" alt="Hilton Logo">
+                <p class="value-proposition">Buy $150 gift card and get 3% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2017/06/19/14/34/hotel-2413224_1280.jpg');">
+                <img src="https://logo.clearbit.com/hyatt.com" alt="Hyatt Logo">
+                <p class="value-proposition">Buy $200 gift card and get 6% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/12/14/25/architecture-2632369_1280.jpg');">
+                <img src="https://logo.clearbit.com/intercontinental.com" alt="Intercontinental Logo">
+                <p class="value-proposition">Buy $250 gift card and get 5% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+            <div class="offer" style="background-image: url('https://cdn.pixabay.com/photo/2016/09/05/16/33/architecture-1640056_1280.jpg');">
+                <img src="https://logo.clearbit.com/fourseasons.com" alt="Four Seasons Logo">
+                <p class="value-proposition">Buy $300 gift card and get 4% cashback</p>
+                <button class="button">Buy Gift Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <script>
+        // Initialize Slick Slider for each category
+        $('.flowers-carousel, .candies-carousel, .spa-carousel, .hotels-carousel').slick({
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>
